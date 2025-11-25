@@ -1,42 +1,555 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body{
+    width: 90%;
+    margin: auto;
+}
+/* header with nav bar  */
+.header__nav{
+    display: flex;
+    justify-content:space-around;
+    background-color: rgb(237, 239, 240);
+}
+.navbar{
+    display: flex;
+    gap: 4rem;
+    padding: 1rem;
+}
+.header__nav h1{
+    margin: 0;
+}
+.header__nav a{
+    text-decoration: none;
+    color: black;
+}
+.icon{
+    padding: 1rem;
+    font-size: 1rem;
+}
+.nav__menu{
+    display: none;
+}
+.Header__center{
+    display: flex;
+    flex-direction: column;
+    background-image: url(waistup-shot.jpg);
+    background-repeat: no-repeat;
+    height: 35rem;
+    background-size: cover;
+    padding: 1rem;
+}
+.Header__center button{
+    width: max-content;
+    border: solid #ccc;
+    background-color: transparent;
+    color: #ccc;
+}
+.info{
+    width: 64rem;
+    margin: auto;
+}
+.info h1{
+    margin: 0;
+    font-size: 3rem;
+    color: #ccc;
+ }
+.info h4{
+    letter-spacing: 2px;
+    margin: 0;
+    color: #ccc;
+
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+} 
+/* article about me */
+.first__section{
+    display: flex;
+    padding: 1rem;
+    gap: 4rem;
+    background-color: rgb(237, 239, 240);
+}
+.section__about{
+    width: 100%;
+}
+.first__section h1{
+    text-shadow: 2px 9px 5px grey;
+}
+.first__section button{
+    background-color: #282627;
+    padding: 1rem;
+    color: #ccc;
+}
+/* skills section */
+.second__section{
+    display: flex;
+    flex-direction: column;
+    background-color: #282627;
+    color: #ccc;
+    text-align: center;
+    padding: 1em;
+}
+.section__data{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+.data__progress{
+    text-align: start;
+}
+label{
+    border: 5px solid transparent;
+    background-color: #959188;
+}
+progress{
+    height: 23px;
+    background-color: #EDECEA;
+}
+progress {
+    border: 1px solid #ccc;
+}
+progress::-webkit-progress-bar {
+     background-color: #eee;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+progress::-webkit-progress-value {
+     background-color: #c2bfba;
+} 
+/* portfolio section */
+.third--section{
+    padding: 1rem 0 1rem 1rem;
+    background-color: aliceblue;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+.third--section h4{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-shadow: 2px 9px 5px grey;
+    margin-top: 0;
 }
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.box__container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
 }
+.box__container button{
+    height: 12rem;
+    width: 18rem;
+}   
+.box1 button, .box3 button, .box5 button{
+    background-color:#282627;
+    color: #ccc;
+} 
+.box1{
+    grid-column: 2 / 2;
+    grid-row: 1;
+}
+.box2{
+    grid-column: 3 / 3;
+    grid-row: 1;
+}
+.box3{
+    grid-column: 4 / 5;
+    grid-row: 1;
+}
+.box4{
+    grid-column: 2 / 2;
+    grid-row: 2;
+}
+.box5{
+    grid-column: 3 / 3;
+    grid-row: 2;
+}
+.box6{
+    grid-column: 4 / 5;
+    grid-row: 2;
+}
+/* last section footer */
+.footer__container{
+    display: flex;
+    justify-content: space-around;
+    background-color: #282627;
+    padding: 1rem;
+    color: #ccc;
+}
+.button__contact{
+    margin: auto;
+}
+.button__contact button{
+    border: solid rgb(237, 231, 231);
+    background-color: transparent;
+    height: 2rem;
+    width: 7rem;
+    margin: auto;
+    color: #ccc;
+}
+.social__icons{
+    position: relative;
+    top: 3rem;
+    right: 2rem;
+}
+@media(max-width: 1200px){
+  .header__nav{
+        display: flex;
+        justify-content:space-around;
+        background-color: rgb(237, 239, 240);
+    }
+    .navbar{
+        display: none;
+        gap: 4rem;
+        padding: 1rem;
+    }
+    .header__nav h1{
+        margin: 0;
+    }
+    .header__nav a{
+        text-decoration: none;
+        color: black;
+    }
+    .icon{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .nav__menu{    
+        display: block;
+        font-size: 3em;
+    }
+    .Header__center{
+        display: flex;
+        flex-direction: column;
+        background-image: url(waistup-shot.jpg);
+        background-repeat: no-repeat;
+        height: 19rem;
+        background-size: cover;
+        padding: 1rem;
+    }
+    .Header__center button{
+        width: max-content;
+        border: solid #ccc;
+        background-color: transparent;
+        color: #ccc;
+    }
+    .info{
+        width: 64rem;
+        margin: auto;
+    }
+    .info h1{
+        margin: 0;
+        color: #ccc;
+    }
+    .info h4{
+        letter-spacing: 2px;
+        margin: 0;
+        color: #ccc;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    } 
+    .first__section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding:1em;
+        gap: 0;
+        background-color: rgb(237, 239, 240);
+        font-size: x-large;
+    }
+    .section__about{
+        width: 100%;
+    }
+    .first__section h1{
+        text-shadow: 2px 9px 5px grey;
+    }
+    .first__section button{
+        background-color: #282627;
+        padding: 1rem;
+        color: #ccc;
+        font-size: x-large;
+    } 
+/* skills section */
+    .second__section{  
+        display: flex; 
+        flex-direction: column;  
+        background-color: #282627;
+        color: #ccc;
+        text-align: center;
+        padding: 1em;
+    }
+    .section__data{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+   }
+   .data__progress{
+        text-align: start; 
+    }
+    label{
+        border: 5px solid transparent;
+        background-color: #959188;
+    }
+    progress{
+        height: 23px;
+        background-color: #EDECEA;
+    }
+    progress {
+        border: 1px solid #ccc;
+    }
+    progress::-webkit-progress-bar {
+        background-color: #eee;
+    }
+    progress::-webkit-progress-value {
+        background-color: #c2bfba;
+    } 
+/* portfolio section */
+    .third--section{
+        padding: 1rem 0 1rem 1rem;
+        background-color: aliceblue;
+    }
+    .third--section h4{
+        font-size: 3rem;
+        font-weight: bolder;
+        text-shadow: 2px 9px 5px grey;
+        margin-top: 0;
+    }
+    .box__container{
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .box__container button{
+        height: 12rem;
+        width: 18rem;
+        font-size: larger;
+    }   
+    .box1 button, .box3 button, .box5 button{
+        background-color:#282627;
+        color: #ccc;
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+    } 
+    .box1{
+        grid-column: 2 / 2;
+        grid-row: 1;
+    }
+    .box2{
+        grid-column: 3 / 3;
+        grid-row: 1;
+    }
+    .box3{
+        grid-column: 3/ 3;
+        grid-row: 2;
+    }
+    .box4{
+        grid-column: 2 / 2;
+        grid-row: 2;
+    }
+    .box5{
+        grid-column: 2 / 2;
+        grid-row: 3;
+    }
+    .box6{
+        grid-column: 3 / 3;
+        grid-row: 3;
+    } 
+/* last section footer */
+    .footer__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
+        background-color: #646364;
+        padding: 1rem;
+        color: #ccc;
+    }
+    .button__contact{
+        margin: auto;
+    }
+    .button__contact button{
+        border: solid #ccc;
+        background-color: transparent;
+        height: 2rem;
+        width: 7rem;
+        margin: auto;
+        color: #ccc;
+    }
+    .social__icons{
+        position: block; 
+        top: 1rem;
+        right: 0rem;
+    } 
+}  
+@media(max-width: 600px){
+  /* .header__nav{
+        display: flex;
+        justify-content:space-around;
+        background-color: rgb(237, 239, 240);
+    }
+    .navbar{
+        display: none;
+        gap: 4rem;
+        padding: 1rem;
+    }
+    .header__nav h1{
+        margin: 0;
+    }
+    .header__nav a{
+        text-decoration: none;
+        color: black;
+    }
+    .icon{
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .nav__menu{    
+        display: block;
+        font-size: 3em;
+    }
+    .Header__center{
+        display: flex;
+        flex-direction: column;
+        background-image: url(waistup-shot.jpg);
+        background-repeat: no-repeat;
+        height: 19rem;
+        background-size: cover;
+        padding: 1rem;
+    }
+    .Header__center button{
+        width: max-content;
+        border: solid #ccc;
+        background-color: transparent;
+        color: #ccc;
+        font-size: small;
+    }
+    .info{
+        width: 64rem;
+        margin: auto;
+    }
+    .info h1{
+        margin: 0;
+        font-size: 3rem;
+        color: #ccc;
+    }
+    .info h4{
+        letter-spacing: 2px;
+        margin: 0;
+        color: #ccc;
+        font-size: small;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }  */
+    .first__section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding:1em;
+        gap: 0;
+        background-color: rgb(237, 239, 240);
+        font-size: large;
+    }
+    .section__about{
+        width: 100%;
+    }
+    .first__section h1{
+        text-shadow: 2px 9px 5px grey;
+    }
+    .first__section button{
+        background-color: #282627;
+        padding: 1rem;
+        color: #ccc;
+        font-size: large;
+    }
+/* skills section */
+     .second__section{  
+        display: flex; 
+        flex-direction: column;  
+        background-color: #282627;
+        color: #ccc;
+        text-align: center;
+        padding: 1em;
+    }
+    .section__data{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1em;
+   }
+   .data__progress{
+        text-align: start; 
+    }
+    label{
+        border: 5px solid transparent;
+        background-color: #959188;
+    }
+    progress{
+        height: 23px;
+        background-color: #EDECEA;
+    }
+    progress {
+        border: 1px solid #ccc;
+    }
+    progress::-webkit-progress-bar {
+        background-color: #eee;
+    }
+    progress::-webkit-progress-value {
+        background-color: #c2bfba;
+    } 
+/* portfolio section */
+    .third--section{
+        padding: 1rem 0 1rem 1rem;
+        background-color: aliceblue;
+    }
+    .third--section h4{
+        font-size: 3rem;
+        font-weight: bolder;
+        text-shadow: 2px 9px 5px grey;
+        margin-top: 0;
+        text-align: center;
+    }
+    .box__container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        gap: 2rem;
+    }
+    .box__container button{
+        height: 12rem;
+        width: 18rem;
+        font-size: large;
+    }   
+    .box1 button, .box3 button, .box5 button{
+        background-color:#282627;
+        color: #ccc;
+    } 
+    .box1{
+        grid-column:1;
+        grid-row: 1;
+    }
+    .box2{
+        grid-column:1;
+        grid-row: 2;
+    }
+    .box3{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .box4{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .box5{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .box6{
+        grid-column: 1;
+        grid-row: 6;
+    } 
+}  
