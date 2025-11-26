@@ -18,7 +18,7 @@ const HeroNav = () => {
         <i className="fa-brands fa-twitter"></i>
         <i className="fa-brands fa-linkedin"></i>
       </div>
-      <div className="nav__menu"> <i className="fa-solid fa-list" style={{ color: "red" }}>Hello</i> <a href=""></a>
+      <div className="nav__menu"> <i className="fa-solid fa-list" ></i> <a href=""></a>
       </div>
     </nav>
     <div className="Header__center">
