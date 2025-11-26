@@ -1,11 +1,11 @@
 import { useState } from 'react'
 
-import './App.css'
 import HeroNav from './heronav/HeroNav'
 import AboutMe from './aboutme/AboutMe'
 import Skills from './skills/Skills'
 import Portfolio from './portfolio/Portfolio'
 import Footer from './footer/Footer'
+import './App.css'
 
 function App() {
 

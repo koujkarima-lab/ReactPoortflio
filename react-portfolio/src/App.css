@@ -30,7 +30,7 @@ body{
 .Header__center{
     display: flex;
     flex-direction: column;
-    background-image: url(waistup-shot.jpg);
+    background-image: url('./assets/image/waistup-shot.jpg');
     background-repeat: no-repeat;
     height: 35rem;
     background-size: cover;
@@ -218,7 +218,7 @@ progress::-webkit-progress-value {
     .Header__center{
         display: flex;
         flex-direction: column;
-        background-image: url(waistup-shot.jpg);
+        background-image: url('./assets/image/waistup-shot.jpg');
         background-repeat: no-repeat;
         height: 19rem;
         background-size: cover;
@@ -383,7 +383,7 @@ progress::-webkit-progress-value {
     } 
 }  
 @media(max-width: 600px){
-  /* .header__nav{
+   .header__nav{
         display: flex;
         justify-content:space-around;
         background-color: rgb(237, 239, 240);
@@ -411,7 +411,7 @@ progress::-webkit-progress-value {
     .Header__center{
         display: flex;
         flex-direction: column;
-        background-image: url(waistup-shot.jpg);
+        background-image: url('./assets/image/waistup-shot.jpg');
         background-repeat: no-repeat;
         height: 19rem;
         background-size: cover;
@@ -443,7 +443,7 @@ progress::-webkit-progress-value {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-    }  */
+    }  
     .first__section{
         display: flex;
         flex-direction: column;
